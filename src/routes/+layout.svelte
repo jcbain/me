@@ -1,19 +1,21 @@
 <script>
-	import Header from '../components/Header.svelte';
-	import Footer from '../components/Footer.svelte';
+	import Header from '../components/header.svelte';
+	import Footer from '../components/footer.svelte';
+	import ThemeContext from '../theme/themeContext.svelte';
+
 	import './styles.css';
 </script>
 
-<div class="app">
-	<Header />
 
-	<main>
-		<slot />
-	</main>
-
-	<Footer />
-
-</div>
+	<ThemeContext>
+		<div class="app">
+			<Header />
+			<main>
+				<slot />
+			</main>
+			<Footer />
+		</div>
+	</ThemeContext>
 
 <style>
 	.app {

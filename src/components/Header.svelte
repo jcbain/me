@@ -1,10 +1,10 @@
 <script>
-	const colors = ['#cc241d', '#fe8019', '#d79921', '#98971a', '#458588', '#b16826', '#ea9bd7'];
+	const colors = ['red', 'orange', 'yellow', 'green', 'blue',  'violet'];
 </script>
 
 <header>
 	{#each colors as color}
-		<div style="background-color: {color}; width: 100%;"></div>
+		<div class={color}></div>
 	{/each}
 
 
@@ -13,8 +13,31 @@
 <style>
 	header {
 		display: flex;
-		height: 40px;
+		height: 20px;
 		justify-content: space-around;
+	}
+
+	div {
+		width: 100%;
+	}
+
+	.red {
+		background-color: var(--theme-colorRed);
+	}
+	.orange {
+		background-color: var(--theme-colorOrange);
+	}
+	.yellow {
+		background-color: var(--theme-colorYellow);
+	}
+	.green {
+		background-color: var(--theme-colorGreen);
+	}
+	.blue {
+		background-color: var(--theme-colorBlue);
+	}
+	.violet {
+		background-color: var(--theme-colorViolet);
 	}
 
 </style>

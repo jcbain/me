@@ -6,6 +6,7 @@
 <style>
     h2 {
         font-size: 3.5em;
+        color: var(--primary-bg);
     }
 
     p {

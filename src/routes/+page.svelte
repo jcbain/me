@@ -1,10 +1,9 @@
 <script>
-	import Intro from '../components/Intro.svelte';
-
+	import Intro from '../components/intro.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>James Bain</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 

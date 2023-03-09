@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-    <p>stepped away from socials but a thumbs up at <a href="https://github.com/jcbain"><img src={github} />github/jcbain</a> is welcomed!</p>
+    <p>stepped away from socials but a thumbs up at <a href="https://github.com/jcbain"><img src={github} alt="github logo"/>github/jcbain</a> is welcomed!</p>
 </footer>
 
 <style>

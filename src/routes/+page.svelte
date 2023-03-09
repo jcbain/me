@@ -1,6 +1,5 @@
 <script>
 	import Intro from '../components/intro.svelte';
-
 </script>
 
 <svelte:head>

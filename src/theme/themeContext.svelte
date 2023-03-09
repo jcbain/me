@@ -4,7 +4,7 @@
 	import { themes as _themes, defaultTheme } from './themes';
 	import type { Theme as ThemeType} from './themes';
 
-	export let themes: [ThemeType] = [..._themes];
+	let themes: [ThemeType] = [..._themes];
 	let _current: string = themes[0].name;
 
 	

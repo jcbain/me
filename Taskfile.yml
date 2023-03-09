@@ -1,0 +1,15 @@
+version: "3"
+
+vars:
+  CONTAINER_IMAGE: me
+
+tasks:
+  build:
+    desc: Build the development container
+    cmds:
+      - docker build -t {{.CONTAINER_IMAGE}} -f Dockerfile.dev .
+
+  start:
+    desc: Start development container
+    cmds:
+      - docker run --rm -p 5173:5173 -v ${PWD}:/app -v /app/node_modules {{.CONTAINER_IMAGE}}

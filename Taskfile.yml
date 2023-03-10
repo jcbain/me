@@ -2,6 +2,7 @@ version: "3"
 
 vars:
   CONTAINER_IMAGE: me
+  CONTAINER_NAME: me
 
 tasks:
   build:
@@ -12,4 +13,9 @@ tasks:
   start:
     desc: Start development container
     cmds:
-      - docker run --rm -p 5173:5173 -v ${PWD}:/app -v /app/node_modules {{.CONTAINER_IMAGE}}
+      - docker run --rm -p 5173:5173 --name {{.CONTAINER_NAME}} -v ${PWD}:/app -v /app/node_modules {{.CONTAINER_IMAGE}}
+
+  prod-build:
+    desc: Create a production build
+    cmds:
+      - docker exec {{.CONTAINER_NAME}} npm run build
